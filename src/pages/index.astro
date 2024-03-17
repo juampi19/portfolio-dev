@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import Github from "../icons/Github.astro";
+import MailIcon from "../icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from '../components/SectionContainer.astro'
+import Briefcase from "../icons/Briefcase.astro";
+---
+
+<Layout title="Porfolio de Juampi - Desarrollador Fullstack">
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-24">
+			<img class="rounded-full size-12 mb-4" src="https://static.vecteezy.com/system/resources/previews/027/664/639/non_2x/astronaut-dabbing-cartoon-icon-illustration-science-technology-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" alt="astronauta foto">
+
+
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+        ¡Hola! Soy Juan Pablo<a href="https://www.linkedin.com/in/juan-amigo-300a5b193/" target="_blank" rel="noreferrer" class="flex justify-center items-center">
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+				
+      </h1>
+      <h2 class="text-xl text-balance">
+        <span>Un recién titulado de analista programador.</span> <span  class="text-violet-200/90">Con experiencia en desarrollo
+        fullstack</span> <span class=" text-red-200/90">En mi portfolio podrás ver proyectos que reflejan mi
+        dedicación y crecimiento</span>. <span class="opacity-75 text-sky-200">Estoy emocionado por seguir aprendiendo y
+        contribuir al mundo de la tecnología</span>.🚀
+      </h2>
+
+
+			<nav class="flex gap-x-2 mt-8">		
+        <SocialLinks href="https://www.linkedin.com/in/juan-amigo-300a5b193/">
+          <LinkedIn class="size-6" />
+          LinkedIn
+        </SocialLinks>
+
+        <SocialLinks href="https://github.com/juampi19">
+          <Github class="size-6"/>
+          GitHub
+        </SocialLinks>
+
+        <SocialLinks href="https://github.com/juampi19">
+          <MailIcon class="size-6"/>
+          jpabloamigo.m@gmail.com
+        </SocialLinks>
+			</nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3">
+        <Briefcase class="size-7"/>
+        Experiencia Laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+  </main>
+</Layout>

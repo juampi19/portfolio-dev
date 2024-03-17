@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+  {
+    date: '2013',
+    title: 'Aplicación con Flask y Jquery',
+    company: 'ALS Inspection',
+    description: 'Se desarrolló un nuevo módulo para una aplicación de inspecciones en ALS Inspection, empleando Flask en el backend y jQuery en el frontend. Este módulo permitió a los usuarios crear inspecciones y seleccionar inspectores de manera eficiente.',
+  },
+  {
+    date: '2013',
+    title: 'Aplicación con Joomla',
+    company: 'ALS Inspection',
+    description: 'Se desarrolló una aplicación en Joomla para la gestión de documentos en ALS Inspection, donde dirigí el proceso de migración y diseñé una nueva interfaz. Esta aplicación habilitó a los usuarios para cargar y gestionar documentos de manera eficiente. '
+  }
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">   
+  {
+    EXPERIENCE.map( experience => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {  ...experience} />
+      </li>
+    ) )
+  }               
+  
+</ol>
+
